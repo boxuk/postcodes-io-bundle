@@ -1,0 +1,5 @@
+bin/*
+vendor
+composer.lock
+Tests/Functional/cache
+Tests/Functional/logs
