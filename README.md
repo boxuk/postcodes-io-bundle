@@ -1,7 +1,7 @@
 PostcodesIoBundle
 =================
 
-@todo Travis build image.
+[![Build Status](https://travis-ci.org/boxuk/postcodes-io-bundle.svg)](https://travis-ci.org/boxuk/postcodes-io-bundle)
 
 A bundle for querying the [postcodes.io](http://postcodes.io) web service.
 

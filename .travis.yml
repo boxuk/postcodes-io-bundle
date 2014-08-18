@@ -12,6 +12,5 @@ before_script:
     - composer install
 
 script:
-    - php -l src
-    - bin/phpcs src --standard=PSR2 --extensions=php
+    - bin/phpcs Api DependencyInjection --standard=PSR2 --extensions=php
     - phpunit
