@@ -10,6 +10,38 @@ A bundle for querying the [postcodes.io](http://postcodes.io) web service.
 [License](LICENSE)
 
 
+Installation
+------------
+
+Installation is handled via [Composer](http://getcomposer.org).
+
+1. Run the following command:
+
+```bash
+$ composer require boxuk/postcodes-io-bundle ~1.0
+```
+
+This should add the following to your project's `composer.json` file:
+
+```js
+"require": {
+    "boxuk/postcodes-io-bundle": "~1.0"
+}
+```
+
+2. Add the bundle to your `app/AppKernel.php` file:
+
+```php
+public function registerBundles()
+{
+    $bundles = array(
+        // ...
+        new BoxUk\PostcodesIoBundle\BoxUkPostcodesIoBundle()
+    );
+}
+```
+
+
 Services
 --------
 
