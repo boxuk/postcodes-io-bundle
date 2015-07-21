@@ -85,7 +85,7 @@ __Parameters:__
 
 __Example:__
 ```php
-$response = $client->bulkLookup(array('postcodes' => array('CF10 1DD', 'W1B 4BD'));
+$response = $client->bulkLookup(array('postcodes' => array('CF10 1DD', 'W1B 4BD')));
 ```
 
 
@@ -103,7 +103,7 @@ __Parameters:__
 
 __Example:__
 ```php
-$response = $client->reverseGeocode(array('latitude' => 51.481667, 'longitude' => -3.182155);
+$response = $client->reverseGeocode(array('latitude' => 51.481667, 'longitude' => -3.182155));
 ```
 
 
@@ -146,7 +146,7 @@ __Parameters:__
 
 __Example:__
 ```php
-$response = $client->matching(array('query' => 'CF10', 'limit' => 20);
+$response = $client->matching(array('query' => 'CF10', 'limit' => 20));
 ```
 
 
@@ -161,7 +161,7 @@ __Parameters:__
 
 __Example:__
 ```php
-$response = $client->validate(array('postcode' => 'CF10 1DD');
+$response = $client->validate(array('postcode' => 'CF10 1DD'));
 ```
 
 
@@ -177,7 +177,7 @@ __Parameters:__
 
 __Example:__
 ```php
-$response = $client->autocomplete(array('postcode' => 'CF10', 'limit' => 20);
+$response = $client->autocomplete(array('postcode' => 'CF10', 'limit' => 20));
 ```
 
 
@@ -207,5 +207,5 @@ __Parameters:__
 
 __Example:__
 ```php
-$response = $client->outwardCodeLookup(array('outcode' => 'CF10');
+$response = $client->outwardCodeLookup(array('outcode' => 'CF10'));
 ```
