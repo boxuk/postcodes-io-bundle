@@ -11,9 +11,9 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "symfony/framework-bundle": "2.*",
-        "guzzlehttp/guzzle-services": "~0.1"
+        "php": ">=5.5",
+        "symfony/framework-bundle": "^2.0|^3.0|^4.0",
+        "guzzlehttp/guzzle-services": "^1.0"
     },
     "require-dev": {
         "symfony/browser-kit": "~2.5",
