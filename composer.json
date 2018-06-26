@@ -1,7 +1,7 @@
 {
     "name": "boxuk/postcodes-io-bundle",
     "type": "library",
-    "description": "A Symfony2 bundle for interaction with the postcodes.io service.",
+    "description": "A Symfony 3/4 bundle for interaction with the postcodes.io service.",
     "keywords": ["postcode", "postcodes.io", "guzzle"],
     "license": "MIT",
     "authors": [
@@ -11,12 +11,12 @@
         }
     ],
     "require": {
-        "php": ">=5.5",
-        "symfony/framework-bundle": "^2.0|^3.0|^4.0",
+        "php": "^7.0",
+        "symfony/framework-bundle": "^3.0|^4.0",
         "guzzlehttp/guzzle-services": "^1.0"
     },
     "require-dev": {
-        "symfony/browser-kit": "~2.5|^3.0|^4.0",
+        "symfony/browser-kit": "^3.0|^4.0",
         "phpunit/phpunit": "~4.7",
         "squizlabs/php_codesniffer": "~1.5",
         "phpmd/phpmd": "~2.0",
