@@ -16,7 +16,7 @@
         "guzzlehttp/guzzle-services": "^1.0"
     },
     "require-dev": {
-        "symfony/browser-kit": "~2.5",
+        "symfony/browser-kit": "~2.5|^3.0|^4.0",
         "phpunit/phpunit": "~4.7",
         "squizlabs/php_codesniffer": "~1.5",
         "phpmd/phpmd": "~2.0",
