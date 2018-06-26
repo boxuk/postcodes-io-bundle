@@ -25,7 +25,7 @@ class ClientFactory
      */
     public function create($baseUrl = self::DEFAULT_BASE_URL)
     {
-        return new GuzzleClient(new Client(), $this->getServiceDescription($baseUrl));
+        return new ApiClient(new Client(), $this->getServiceDescription($baseUrl));
     }
 
     /**
