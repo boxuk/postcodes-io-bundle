@@ -10,8 +10,8 @@
     </parameters>
 
     <services>
-        <service id="box_uk_postcodes_io.client_factory" class="%box_uk_postcodes_io.client_factory.class%" />
-        <service id="box_uk_postcodes_io.client" class="%box_uk_postcodes_io.client.class%" factory-service="box_uk_postcodes_io.client_factory" factory-method="create">
+        <service id="box_uk_postcodes_io.client" class="%box_uk_postcodes_io.client.class%">
+            <factory class="%box_uk_postcodes_io.client_factory.class%" method="create"/>
             <argument>%box_uk_postcodes_io.base_url%</argument>
         </service>
     </services>
