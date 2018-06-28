@@ -59,7 +59,7 @@ class ClientFactory
                         'responseModel' => 'getResponse',
                         'parameters' => array(
                             'postcodes' => array(
-                                'location' => 'postField',
+                                'location' => 'formParam',
                                 'description' => 'The postcodes to look up (max 100).',
                                 'required' => true
                             )
@@ -98,7 +98,7 @@ class ClientFactory
                         'responseModel' => 'getResponse',
                         'parameters' => array(
                             'geolocations' => array(
-                                'location' => 'postField',
+                                'location' => 'formParam',
                                 'description' => 'The latitude and longitude coordinates to look up.',
                                 'required' => true
                             )
