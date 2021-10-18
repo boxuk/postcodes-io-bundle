@@ -3,7 +3,7 @@ PostcodesIoBundle
 
 [![Build Status](https://travis-ci.org/boxuk/postcodes-io-bundle.svg)](https://travis-ci.org/boxuk/postcodes-io-bundle)
 
-A bundle for querying the [postcodes.io](http://postcodes.io) web service.
+A bundle for querying the [postcodes.io](https://postcodes.io) web service.
 
 [https://github.com/BoxUk/postcodes-io-bundle](https://github.com/BoxUk/postcodes-io-bundle)
 
@@ -13,7 +13,7 @@ A bundle for querying the [postcodes.io](http://postcodes.io) web service.
 Installation
 ------------
 
-Installation is handled via [Composer](http://getcomposer.org).
+Installation is handled via [Composer](https://getcomposer.org).
 
 1. Run the following command:
     ```bash
@@ -53,7 +53,7 @@ Usage
 
 Inject the `box_uk_postcodes_io.client` service into your controller/class as you would any other service.  Once you have the instance of the client, you can call the methods documented below on it, passing any parameters as an associative array.
 
-The response will be a `GuzzleHttp\Command\Model` object, which you can access as an array, e.g. `echo $response['result']['latitude']`.  Alternatively, you can just call `$response->toArray()` to get an array representation of the response.  For further documentation on the structure of the response, please see [the postcodes.io documentation](http://postcodes.io/docs#Data).
+The response will be a `GuzzleHttp\Command\Model` object, which you can access as an array, e.g. `echo $response['result']['latitude']`.  Alternatively, you can just call `$response->toArray()` to get an array representation of the response.  For further documentation on the structure of the response, please see [the postcodes.io documentation](https://postcodes.io/docs#Data).
 
 
 Methods
@@ -61,7 +61,7 @@ Methods
 
 lookup()
 --------
-[API documentation](http://postcodes.io/docs#Postcode-Lookup)
+[API documentation](https://postcodes.io/docs#Postcode-Lookup)
 
 Lookup data about a particular postcode.
 
@@ -76,7 +76,7 @@ $response = $client->lookup(array('postcode' => 'CF10 1DD'));
 
 bulkLookup()
 --------
-[API documentation](http://postcodes.io/docs#Bulk-Postcode-Lookup)
+[API documentation](https://postcodes.io/docs#Bulk-Postcode-Lookup)
 
 Lookup data about a set of postcodes.
 
@@ -91,7 +91,7 @@ $response = $client->bulkLookup(array('postcodes' => array('CF10 1DD', 'W1B 4BD'
 
 reverseGeocode()
 --------
-[API documentation](http://postcodes.io/docs#Geocode-Postcode)
+[API documentation](https://postcodes.io/docs#Geocode-Postcode)
 
 Get data for postcodes nearest a given latitude/longitude coordinate.
 
@@ -109,7 +109,7 @@ $response = $client->reverseGeocode(array('latitude' => 51.481667, 'longitude' =
 
 bulkReverseGeocode()
 --------
-[API documentation](http://postcodes.io/docs#Geocode-Postcode)
+[API documentation](https://postcodes.io/docs#Geocode-Postcode)
 
 Bulk translation of latitude/longitude coordinates into postcode data.
 
@@ -136,7 +136,7 @@ $response = $client->bulkReverseGeocode(
 
 matching()
 --------
-[API documentation](http://postcodes.io/docs#Postcode-Query)
+[API documentation](https://postcodes.io/docs#Postcode-Query)
 
 Find postcodes matching a given query.
 
@@ -152,7 +152,7 @@ $response = $client->matching(array('query' => 'CF10', 'limit' => 20));
 
 validate()
 --------
-[API documentation](http://postcodes.io/docs#Postcode-Validation)
+[API documentation](https://postcodes.io/docs#Postcode-Validation)
 
 Validate a postcode.
 
@@ -167,7 +167,7 @@ $response = $client->validate(array('postcode' => 'CF10 1DD'));
 
 autocomplete()
 --------
-[API documentation](http://postcodes.io/docs#Postcode-Autocomplete)
+[API documentation](https://postcodes.io/docs#Postcode-Autocomplete)
 
 Get a list of postcodes to autocomplete a partial postcode.
 
@@ -183,7 +183,7 @@ $response = $client->autocomplete(array('postcode' => 'CF10', 'limit' => 20));
 
 random()
 --------
-[API documentation](http://postcodes.io/docs#Random-Postcode)
+[API documentation](https://postcodes.io/docs#Random-Postcode)
 
 Get data for a random postcode.
 
@@ -198,7 +198,7 @@ $response = $client->random();
 
 outwardCodeLookup()
 --------
-[API documentation](http://postcodes.io/docs#Show-Outcode)
+[API documentation](https://postcodes.io/docs#Show-Outcode)
 
 Get data for the specified "outward code" (first half of postcode).
 
