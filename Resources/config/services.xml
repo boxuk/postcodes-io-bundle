@@ -4,14 +4,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <parameters>
-        <parameter key="box_uk_postcodes_io.client_factory.class">BoxUk\PostcodesIoBundle\Api\ClientFactory</parameter>
-        <parameter key="box_uk_postcodes_io.client.class">GuzzleHttp\Command\Guzzle\GuzzleClient</parameter>
-    </parameters>
-
     <services>
-        <service id="box_uk_postcodes_io.client_factory" class="%box_uk_postcodes_io.client_factory.class%" />
-        <service id="box_uk_postcodes_io.client" class="%box_uk_postcodes_io.client.class%" factory-service="box_uk_postcodes_io.client_factory" factory-method="create">
+        <service id="BoxUk\PostcodesIoBundle\Api\ClientFactory" class="BoxUk\PostcodesIoBundle\Api\ClientFactory" />
+        <service id="BoxUk\PostcodesIoBundle\Api\ApiClient" class="BoxUk\PostcodesIoBundle\Api\ApiClient">
+            <factory service="BoxUk\PostcodesIoBundle\Api\ClientFactory" method="create"/>
             <argument>%box_uk_postcodes_io.base_url%</argument>
         </service>
     </services>

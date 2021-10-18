@@ -9,6 +9,10 @@ A bundle for querying the [postcodes.io](https://postcodes.io) web service.
 
 [License](LICENSE)
 
+Note from DailyInfo - SF4 work in progress
+====
+
+This is a fork of the excellent [Symfony 2 bundle by Chris Collins of Box UK](https://github.com/boxuk/postcodes-io-bundle) that has been updated to support Symfony 3/4. The tests are failing due to the updated version of Guzzle being used in this fork, use it at your own risk. The version of Guzzle has been updated to v6, which means that the mocking of clients must be changed - if you find yourself using this fork and have Guzzle testing experience, please feel free to submit a pull request.
 
 Installation
 ------------
